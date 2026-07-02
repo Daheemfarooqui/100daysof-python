@@ -1,0 +1,5 @@
+query = """
+    SELECT *
+    FROM students
+    """
+
