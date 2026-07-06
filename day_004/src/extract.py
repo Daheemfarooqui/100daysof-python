@@ -6,7 +6,7 @@ def extract_data():
     try:
         response = requests.get(url)
         data = response.json()
-        df = pd.DataFrame(data)
+        df = pd.json_normalize(data)
         return df 
         print('Data Extracted form API')
     except Exception:

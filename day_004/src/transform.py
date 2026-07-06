@@ -1,6 +1,6 @@
 def transform_data(df):
     try:
-        df = df[['id', 'name', 'username', 'email', 'address', 'phone', 'website',]]
+        df1 = df.copy()
         print("Transformation done")
         return df
     except Exception as e:
